@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+li {
+    margin-top: 5px;
+}
