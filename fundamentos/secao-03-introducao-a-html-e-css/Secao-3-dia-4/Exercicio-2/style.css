@@ -7,6 +7,9 @@ body {
         color: brown;
 }
 
+article {
+    max-width: 80%;
+}
 nav {
     background-color: rgb(192, 178, 178);
     padding: 25px;
@@ -42,10 +45,12 @@ li {
 
 section {
     margin: 50px;
+
 }
 section h1,
 h2 {
-    font-size: 22px;
+    font-size: 24px;
+        font-weight: bold;
 }
 
 
