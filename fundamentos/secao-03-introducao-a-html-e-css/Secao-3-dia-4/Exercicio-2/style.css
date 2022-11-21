@@ -24,3 +24,12 @@ li {
 section {
     margin: 50px;
 }
+section h1,
+h2 {
+    font-size: 22px;
+}
+
+
+h2 a {
+    font-size: 10px;
+}
