@@ -1,17 +1,25 @@
 body {
     text-align: center;
+    font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        background-color: rgb(197, 224, 187);
+        color: brown;
 }
 
 nav {
     background-color: rgb(192, 178, 178);
     padding: 25px;
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 10px;
+    font-weight: bold;
 
 }
 
 nav a {
     margin: 6px;
+    text-decoration: none;
+        color: rgb(70, 85, 99);
 }
 
 ul {
