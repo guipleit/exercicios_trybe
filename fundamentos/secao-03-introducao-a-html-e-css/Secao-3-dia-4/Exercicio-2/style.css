@@ -2,7 +2,7 @@ body {
     text-align: center;
     font-family: 'Raleway', sans-serif;
         font-size: 20px;
-        font-weight: 600;
+        font-weight: 500;
         background-color: rgb(197, 224, 187);
         color: brown;
 }
@@ -37,7 +37,7 @@ li {
     text-align: center;
     max-width: 60%;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 section {
