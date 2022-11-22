@@ -1,12 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+}
 body {
     text-align: center;
     font-family: 'Raleway', sans-serif;
         font-size: 20px;
         font-weight: 500;
-        background-color: rgb(197, 224, 187);
+        background-color: rgba(155, 185, 143, 0.404);
         color: brown;
 }
 
+h1 {
+    margin: 15px
+}
 
 nav {
     background-color: rgb(192, 178, 178);
@@ -49,25 +56,46 @@ section h1,
 h2 {
     font-size: 24px;
         font-weight: bold;
+        
 }
 
 
 .references a {
     font-size: 16px;
 }
+
 footer {
     background-color: rgb(192, 178, 178);
     padding: 25px;
     font-size: 22px;
+    color: rgb(70, 85, 99)
 
 }
+
 .sidebar-container {
     position: absolute;
     left: 80%;
-    bottom: 70%;
+    bottom: 76%;
     font-size: 30px;
 }
 
 .sidebar {
     font-weight: bold;
+}
+.sci {
+    position: absolute;
+    right: 80%;
+    bottom: 60%
+}
+
+.sci h1 {
+    font-size: 30px;
+}
+
+section li {
+    font-size: 22px;
+}
+
+.sidebar-links {
+    color: rgb(70, 85, 99);
 }
