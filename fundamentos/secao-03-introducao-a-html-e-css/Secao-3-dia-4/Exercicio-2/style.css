@@ -66,5 +66,7 @@ footer {
     left: 80%;
     bottom: 70%;
     font-size: 30px;
-
+    
+.sidebar-container div {
+    font-weight: bold;
 }
