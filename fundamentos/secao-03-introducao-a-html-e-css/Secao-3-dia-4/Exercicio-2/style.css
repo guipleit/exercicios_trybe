@@ -7,9 +7,7 @@ body {
         color: brown;
 }
 
-article {
 
-}
 nav {
     background-color: rgb(192, 178, 178);
     padding: 25px;
@@ -61,5 +59,12 @@ footer {
     background-color: rgb(192, 178, 178);
     padding: 25px;
     font-size: 22px;
+
+}
+.sidebar-container {
+    position: absolute;
+    left: 80%;
+    bottom: 70%;
+    font-size: 30px;
 
 }
