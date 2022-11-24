@@ -4,7 +4,6 @@ let finalWage
 
 if (wage <= 1556.94) {
     inssWage = (wage - wage * 0.08)
-    console.log(inssWage)
 } else if (wage >= 1556.95 && wage <= 2594.92) {
     inssWage = (wage - wage * 0.09) 
 } else if (wage >= 2594.93 && wage <= 5189.82) {
