@@ -4,6 +4,8 @@ let greatestNumber = 0
 for (i = 0; i < numbers.length; i += 1) {
     if (numbers[i] >= greatestNumber) {
         greatestNumber = numbers[i]
+    } else {
+        greatestNumber = greatestNumber
     }
 }
 console.log(greatestNumber);
