@@ -29,5 +29,5 @@ for (let key in info) {
 //Faça um novo for/in, mas agora mostre todos os valores das chaves do objeto.
 
 for (let keyValor in info) {
-  console.log(info[key]);
+  console.log(info[keyValor]);
 }
