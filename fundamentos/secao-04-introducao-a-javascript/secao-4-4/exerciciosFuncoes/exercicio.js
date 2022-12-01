@@ -30,3 +30,19 @@ function greatestInArray(num) {
     }
     
 console.log(greatestInArray([2, 3, 6, 7, 10, 1]));
+
+//Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+
+//Array de teste: [2, 4, 6, 7, 10, 0, -3];.
+
+function smallestInArray(num) {
+    let smallest = 0
+    for(index in num) {
+        if (smallest >= num[index]) {
+            smallest = num[index]
+        }
+    }
+    return smallest
+    }
+
+    console.log(smallestInArray([2, 4, 6, 7, 10, 0, -3]));
