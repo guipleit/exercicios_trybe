@@ -1,6 +1,6 @@
 //Crie uma função que receba uma string e retorne true se for um palíndromo, ou false, se não for.
 function reverseString(text){
-    return text.split("").reverse().join("");
+    return text.split("").reverse().join("");        
 }
 
 function searchForPalindrome(text) {
@@ -27,7 +27,7 @@ function greatestInArray(num) {
         }
     }
     return greatest
-    }
+}
     
 console.log(greatestInArray([2, 3, 6, 7, 10, 1]));
 
@@ -43,7 +43,7 @@ function smallestInArray(num) {
         }
     }
     return smallest
-    }
+}
 
     console.log(smallestInArray([2, 4, 6, 7, 10, 0, -3]));
 
@@ -53,15 +53,15 @@ function smallestInArray(num) {
 
     //Valor esperado no retorno da função: Fernanda.
 
-//     function longestName(array) {
-//         let longest = [0]
-//         for(index in array) {
-//             if(index.length > longest.length){
-//         longest = array[index] 
-//             }
+    function longestName(array) {
+        let longest = array[0]
+        for(index in array) {
+            if(array[index].length > longest.length){
+        longest = array[index] 
+            }
 
-//         }     
-//         return longest
-// }
+        }     
+        return longest
+}
 
-// console.log(longestName(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+console.log(longestName(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
