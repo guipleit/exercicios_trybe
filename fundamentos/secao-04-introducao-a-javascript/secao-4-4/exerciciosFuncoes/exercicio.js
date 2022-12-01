@@ -12,4 +12,21 @@ function searchForPalindrome(text) {
 
     
 }
-console.log(searchForPalindrome('borzoi'));
+
+console.log(searchForPalindrome('arara'));
+
+//Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+
+//Array de teste: [2, 3, 6, 7, 10, 1];.
+
+function greatestInArray(num) {
+    let greatest = 0
+    for(index in num) {
+        if (greatest < num[index]) {
+            greatest = num[index]
+        }
+    }
+    return greatest
+    }
+    
+console.log(greatestInArray([2, 3, 6, 7, 10, 1]));
