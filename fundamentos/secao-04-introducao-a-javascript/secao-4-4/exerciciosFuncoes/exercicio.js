@@ -94,3 +94,20 @@ function maisRepetido(numeros) {       //Dificuldade pra entender, olhei no gaba
   return numeros[indexNumeroRepetido];
 }
 console.log(maisRepetido([2, 3, 2, 5, 8, 2, 3]));
+
+//Crie uma função que receba um número natural (número inteiro não negativo) N e retorne o somatório de todos os números de 1 até N.
+
+//Valor de teste: N = 5.
+
+//Valor esperado no retorno da função: 1+2+3+4+5 = 15.
+
+function sumOfN(num) {
+    let storeNum = 0
+    for(let index = 0; index < num ; index += 1){
+    storeNum += num - index
+}    
+return storeNum
+}
+
+
+console.log(sumOfN(5));
