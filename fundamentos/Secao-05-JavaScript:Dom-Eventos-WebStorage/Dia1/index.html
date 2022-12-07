@@ -57,6 +57,23 @@
         }
         yellowToGreen()
 
+                                        const redToWhite = () => {
+                                            let color = document.getElementsByClassName('center-content')[0];
+                                            color.style.background = 'white'
+                                        }
+                                        redToWhite()
+                                        const corrigeTexto = () => {
+                                            let text = document.getElementsByTagName('h1')[0]
+                                            text.innerHTML = "Desafio - Javascript"
+                                        }
+                                        corrigeTexto()
+
+                                        const textUpperCase = () => {
+                                            let paragraph = document.getElementsByTagName('p')[0];
+                                            paragraph.innerHTML = paragraph.innerHTML.toUpperCase();
+                                        }
+                                        textUpperCase();
+
 
 
 </script>
