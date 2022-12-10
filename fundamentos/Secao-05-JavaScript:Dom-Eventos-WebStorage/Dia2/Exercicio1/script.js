@@ -20,6 +20,10 @@
 // let primeiroFi = document.getElementById('pai').firstElementChild
 // console.log(primeiroFi);
 
-let primeiroFi2 = document.getElementById('elementoOndeVoceEsta').previousElementSibling
-console.log(primeiroFi2);
+// let primeiroFi2 = document.getElementById('elementoOndeVoceEsta').previousElementSibling
+// console.log(primeiroFi2);
+
+let atencao = document.getElementById('elementoOndeVoceEsta').nextSibling
+console.log(atencao);
+
 
