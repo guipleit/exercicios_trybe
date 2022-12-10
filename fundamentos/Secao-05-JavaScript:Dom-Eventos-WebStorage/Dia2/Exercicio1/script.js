@@ -14,5 +14,10 @@
 // ondeVcEstaPai.style.color = 'green'
 // console.log(ondeVcEstaPai);
 
-let primeiroFilhoDoFi = document.getElementById('primeiroFilhoDoFilho')
-primeiroFilhoDoFi.innerHTML = 'Texto!'
+// let primeiroFilhoDoFi = document.getElementById('primeiroFilhoDoFilho')
+// primeiroFilhoDoFi.innerHTML = 'Texto!'
+
+let primeiroFi = document.getElementById('pai').firstElementChild
+console.log(primeiroFi);
+
+
