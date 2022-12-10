@@ -13,3 +13,7 @@ const bodyChild = document.createElement('h1')
 bodyChild.innerHTML = 'TrybeTrip - Agência de Viagens'
 body.appendChild(bodyChild)
 
+const tagMain = document.createElement('main')
+tagMain.className = 'main-content'
+body.appendChild(tagMain)
+
