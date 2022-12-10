@@ -26,7 +26,10 @@
 // let atencao = document.getElementById('elementoOndeVoceEsta').nextSibling
 // console.log(atencao);
 
-let terceiroFi = document.getElementById('elementoOndeVoceEsta').nextElementSibling
-console.log(terceiroFi);
+// let terceiroFi = document.getElementById('elementoOndeVoceEsta').nextElementSibling
+// console.log(terceiroFi);
+
+let terceiroFiPai = document.getElementById('pai').firstElementChild.nextElementSibling.nextElementSibling
+console.log(terceiroFiPai);
 
 
