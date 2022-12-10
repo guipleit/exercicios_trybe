@@ -11,4 +11,6 @@
 // console.log(ondevcesta);
 //
 let ondeVcEstaPai = document.getElementById('elementoOndeVoceEsta').parentElement
+ondeVcEstaPai.style.color = 'green'
 console.log(ondeVcEstaPai);
+
