@@ -17,3 +17,8 @@ const tagMain = document.createElement('main')
 tagMain.className = 'main-content'
 body.appendChild(tagMain)
 
+const tagSection = document.createElement('section')
+tagSection.className = 'center-content'
+body.appendChild(tagSection)
+
+
