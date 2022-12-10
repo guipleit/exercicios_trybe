@@ -15,5 +15,10 @@ paiDoElemento.appendChild(fiDoElemento)
 
 const primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho')
 const filhoDoPrimeiroFilho = document.createElement('section')
-filhoDoPrimeiroFilho.id = 'fiDopFi'
+filhoDoPrimeiroFilho.id = 'filhoDoPrimeiroFilho'
 primeiroFilhoDoFilho.appendChild(filhoDoPrimeiroFilho)
+
+const terceiroFilhoPaiDoFilhoDoPrimeiroFilho = document.getElementById('filhoDoPrimeiroFilho').parentElement.parentElement.nextElementSibling
+console.log(terceiroFilhoPaiDoFilhoDoPrimeiroFilho);
+
+
