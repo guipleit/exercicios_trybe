@@ -9,8 +9,9 @@
 // Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
 
 const body = document.getElementById('body');
-const bodyChild = document.createElement('h1');
-bodyChild.innerHTML = 'TrybeTrip - Agência de Viagens';
+const tagH1 = document.createElement('h1');
+tagH1.innerHTML = 'TrybeTrip - Agência de Viagens';
+tagH1.className = 'title'
 body.appendChild(bodyChild);
 
 const tagMain = document.createElement('main');
@@ -60,6 +61,8 @@ const createH3 = () => {
     }
 }
 createH3()
+
+
 
 
 
