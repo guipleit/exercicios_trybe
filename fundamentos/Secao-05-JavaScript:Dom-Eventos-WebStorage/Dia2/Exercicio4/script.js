@@ -52,5 +52,14 @@ const createLi = () => {
 }
 createLi()
 
+const createH3 = () => {
+    for (let index = 1; index <= 3; index += 1) {
+        const createdH3 = document.createElement('h3')
+        createdH3.id = 'h3'
+        tagMain.appendChild(createdH3)
+    }
+}
+createH3()
+
 
 
