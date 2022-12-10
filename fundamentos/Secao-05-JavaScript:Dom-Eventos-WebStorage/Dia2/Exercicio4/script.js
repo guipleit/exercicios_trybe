@@ -12,7 +12,7 @@ const body = document.getElementById('body');
 const tagH1 = document.createElement('h1');
 tagH1.innerHTML = 'TrybeTrip - Agência de Viagens';
 tagH1.className = 'title'
-body.appendChild(bodyChild);
+body.appendChild(tagH1);
 
 const tagMain = document.createElement('main');
 tagMain.className = 'main-content';
@@ -48,15 +48,17 @@ const createLi = () => {
     for (let index = 0; index < extenso.length; index += 1) {
         const liElement = document.createElement('li')
         liElement.innerHTML = extenso[index]
+        
         ul.appendChild(liElement)
     }
+    
 }
 createLi()
 
 const createH3 = () => {
     for (let index = 1; index <= 3; index += 1) {
         const createdH3 = document.createElement('h3')
-        createdH3.id = 'h3'
+        createdH3.className = 'description'
         tagMain.appendChild(createdH3)
     }
 }
