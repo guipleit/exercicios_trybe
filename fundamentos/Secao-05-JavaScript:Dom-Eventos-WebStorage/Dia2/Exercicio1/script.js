@@ -10,7 +10,9 @@
 // let ondevcesta = document.getElementById('elementoOndeVoceEsta')
 // console.log(ondevcesta);
 //
-let ondeVcEstaPai = document.getElementById('elementoOndeVoceEsta').parentElement
-ondeVcEstaPai.style.color = 'green'
-console.log(ondeVcEstaPai);
+// let ondeVcEstaPai = document.getElementById('elementoOndeVoceEsta').parentElement
+// ondeVcEstaPai.style.color = 'green'
+// console.log(ondeVcEstaPai);
 
+let primeiroFilhoDoFi = document.getElementById('primeiroFilhoDoFilho')
+primeiroFilhoDoFi.innerHTML = 'Texto!'
