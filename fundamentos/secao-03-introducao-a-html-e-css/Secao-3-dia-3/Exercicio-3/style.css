@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+h1,
+p,
+ol,
+li {
+    text-align: center;
+    margin: 10px;
+}
+
+li:hover {
+    background-color: grey;
+}
+
+li:active {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ol,
+ul {
+    list-style: none;
+
+}
