@@ -35,6 +35,7 @@ tagMain.appendChild(rightContent);
 
 const image = document.createElement('img');
 image.src = 'https://picsum.photos/200'
+image.className = 'small-image'
 tagSection.appendChild(image)
 
 
