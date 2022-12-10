@@ -8,6 +8,12 @@
 // Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, … como valores da lista. Essa lista deve ser filha do section criado no passo 6;
 // Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
 
+
+// //Adicione a classe title na tag h1 criada;
+// Adicione a classe description nas 3 tags h3 criadas;
+// Remova a section criada no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild();
+// Centralize a section criada no passo 6 (aquele que possui a classe right-content).
+
 const body = document.getElementById('body');
 const tagH1 = document.createElement('h1');
 tagH1.innerHTML = 'TrybeTrip - Agência de Viagens';
@@ -63,6 +69,14 @@ const createH3 = () => {
     }
 }
 createH3()
+
+const sectionLeftContent = document.getElementsByClassName('left-content')[0];
+ tagMain.removeChild(sectionLeftContent);
+
+rightContent.style.margin = '0 auto'
+
+    
+
 
 
 
