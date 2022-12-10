@@ -25,5 +25,9 @@ const tagP = document.createElement('p')
 tagP.innerHTML = 'ALGUM TEXTO'
 tagSection.appendChild(tagP)
 
+const leftContent = document.createElement('section') 
+leftContent.className = 'left-content'
+tagMain.appendChild(leftContent)
+
 
 
