@@ -17,7 +17,9 @@
 // let primeiroFilhoDoFi = document.getElementById('primeiroFilhoDoFilho')
 // primeiroFilhoDoFi.innerHTML = 'Texto!'
 
-let primeiroFi = document.getElementById('pai').firstElementChild
-console.log(primeiroFi);
+// let primeiroFi = document.getElementById('pai').firstElementChild
+// console.log(primeiroFi);
 
+let primeiroFi2 = document.getElementById('elementoOndeVoceEsta').previousElementSibling
+console.log(primeiroFi2);
 
