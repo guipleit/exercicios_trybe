@@ -36,6 +36,21 @@ tagMain.appendChild(rightContent);
 const image = document.createElement('img');
 image.src = 'https://picsum.photos/200'
 image.className = 'small-image'
-tagSection.appendChild(image)
+leftContent.appendChild(image)
+
+const ul = document.createElement('ul')
+ul.id = 'ul'
+rightContent.appendChild(ul)
+
+const createLi = () => {
+    const extenso = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
+    for (let index = 0; index < extenso.length; index += 1) {
+        const liElement = document.createElement('li')
+        liElement.innerHTML = extenso[index]
+        ul.appendChild(liElement)
+    }
+}
+createLi()
+
 
 
