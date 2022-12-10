@@ -13,6 +13,8 @@
 // Adicione a classe description nas 3 tags h3 criadas;
 // Remova a section criada no passo 5 (aquele que possui a classe left-content). Utilize a função .removeChild();
 // Centralize a section criada no passo 6 (aquele que possui a classe right-content).
+//Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content) para a cor verde;
+// Remova os dois últimos elementos (nove e dez) da lista criada no passo 
 
 const body = document.getElementById('body');
 const tagH1 = document.createElement('h1');
@@ -41,21 +43,21 @@ rightContent.className = 'right-content';
 tagMain.appendChild(rightContent);
 
 const image = document.createElement('img');
-image.src = 'https://picsum.photos/200'
-image.className = 'small-image'
-leftContent.appendChild(image)
+image.src = 'https://picsum.photos/200';
+image.className = 'small-image';
+leftContent.appendChild(image);
 
-const ul = document.createElement('ul')
-ul.id = 'ul'
-rightContent.appendChild(ul)
+const ul = document.createElement('ul');
+ul.id = 'ul';
+rightContent.appendChild(ul);
 
 const createLi = () => {
-    const extenso = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
+    const extenso = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
     for (let index = 0; index < extenso.length; index += 1) {
-        const liElement = document.createElement('li')
-        liElement.innerHTML = extenso[index]
+        const liElement = document.createElement('li');
+        liElement.innerHTML = extenso[index];
         
-        ul.appendChild(liElement)
+        ul.appendChild(liElement);
     }
     
 }
@@ -63,9 +65,9 @@ createLi()
 
 const createH3 = () => {
     for (let index = 1; index <= 3; index += 1) {
-        const createdH3 = document.createElement('h3')
-        createdH3.className = 'description'
-        tagMain.appendChild(createdH3)
+        const createdH3 = document.createElement('h3');
+        createdH3.className = 'description';
+        tagMain.appendChild(createdH3);
     }
 }
 createH3()
@@ -73,7 +75,10 @@ createH3()
 const sectionLeftContent = document.getElementsByClassName('left-content')[0];
  tagMain.removeChild(sectionLeftContent);
 
-rightContent.style.margin = '0 auto'
+rightContent.style.margin = '0 auto';
+
+const centerContentParent = document.getElementsByClassName('center-content')[0];
+centerContentParent.parentNode.style.backgroundColor = 'green'
 
     
 
