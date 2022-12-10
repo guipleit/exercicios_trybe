@@ -19,6 +19,11 @@ body.appendChild(tagMain)
 
 const tagSection = document.createElement('section')
 tagSection.className = 'center-content'
-body.appendChild(tagSection)
+tagMain.appendChild(tagSection)
+
+const tagP = document.createElement('p')
+tagP.innerHTML = 'ALGUM TEXTO'
+tagSection.appendChild(tagP)
+
 
 
