@@ -23,7 +23,10 @@
 // let primeiroFi2 = document.getElementById('elementoOndeVoceEsta').previousElementSibling
 // console.log(primeiroFi2);
 
-let atencao = document.getElementById('elementoOndeVoceEsta').nextSibling
-console.log(atencao);
+// let atencao = document.getElementById('elementoOndeVoceEsta').nextSibling
+// console.log(atencao);
+
+let terceiroFi = document.getElementById('elementoOndeVoceEsta').nextElementSibling
+console.log(terceiroFi);
 
 
