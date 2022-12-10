@@ -78,7 +78,11 @@ const sectionLeftContent = document.getElementsByClassName('left-content')[0];
 rightContent.style.margin = '0 auto';
 
 const centerContentParent = document.getElementsByClassName('center-content')[0];
-centerContentParent.parentNode.style.backgroundColor = 'green'
+centerContentParent.parentNode.style.backgroundColor = 'green';
+
+const ul2 = document.getElementsByClassName('ul')[0];
+ul.lastChild.remove();
+ul.lastChild.remove();
 
     
 
