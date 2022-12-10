@@ -29,5 +29,8 @@ const leftContent = document.createElement('section')
 leftContent.className = 'left-content'
 tagMain.appendChild(leftContent)
 
+const rightContent = document.createElement('section') 
+rightContent.className = 'right-content'
+tagMain.appendChild(rightContent)
 
 
