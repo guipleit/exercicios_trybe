@@ -24,7 +24,7 @@ const createDays = () => {
         days.className = 'day'
 
         if (decemberDaysList[index] === 24 || decemberDaysList[index] === 25 || decemberDaysList[index] === 31) {
-            days.className = 'holiday'
+            days.className += ' holiday'
         }
 
         if (decemberDaysList[index] === 4 || decemberDaysList[index] === 11 || decemberDaysList[index] === 18 || decemberDaysList[index] === 25) {
