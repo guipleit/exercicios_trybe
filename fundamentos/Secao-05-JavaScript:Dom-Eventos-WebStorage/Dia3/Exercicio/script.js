@@ -21,6 +21,16 @@ const decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,
 const createDays = () => {
     for (let index = 0; index < decemberDaysList.length; index += 1) {
         const days = document.createElement('li')
+        days.className = 'day'
+
+        if (decemberDaysList[index] === 24 || decemberDaysList[index] === 25 || decemberDaysList[index] === 31) {
+            days.className = 'holiday'
+        }
+
+        if (decemberDaysList[index] === 4 || decemberDaysList[index] === 11 || decemberDaysList[index] === 18 || decemberDaysList[index] === 25) {
+            days.className += ' friday'
+        }
+
         days.innerHTML = decemberDaysList[index]
         daysCalendar.appendChild(days)
     }
