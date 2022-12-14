@@ -37,3 +37,15 @@ const createDays = () => {
 }
 
 createDays()
+
+// Cria botões para os feriados
+const createButton = (Feriados) => {
+    const buttonContainer = document.querySelector('.buttons-container')
+    let button = document.createElement('button');
+
+    button.innerHTML = Feriados
+    button.id = 'btn-holiday'
+    buttonContainer.appendChild(button)
+}
+
+createButton('Feriados')
