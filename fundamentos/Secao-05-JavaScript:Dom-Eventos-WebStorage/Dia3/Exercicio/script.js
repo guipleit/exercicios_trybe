@@ -49,3 +49,22 @@ const createButton = (Feriados) => {
 }
 
 createButton('Feriados')
+
+const colorHoliday = () => {
+  const holiday = document.getElementsByClassName('holiday');
+  const holidayButton = document.getElementById('btn-holiday');
+  const backgroundColor = document.body.style.backgroundColor;
+  const newColor = 'white';
+
+  holidayButton.addEventListener('click', () => {
+    for (let index = 0; index < holiday.length; index += 1) {
+        if (holiday[index].style.backgroundColor === document.body.style.backgroundColor) {
+            holiday[index].style.backgroundColor = newColor;
+        } else {
+            holiday[index].style.backgroundColor = backgroundColor
+        }
+    }
+  });
+}
+
+colorHoliday()
