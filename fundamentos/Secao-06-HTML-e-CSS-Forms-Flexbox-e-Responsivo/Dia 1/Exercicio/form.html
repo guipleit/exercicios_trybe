@@ -13,8 +13,29 @@
     <header>TrybeTrip</header>
 
     <main>
+        <form action="get">
+            <div class="name-form">
         <label for="name">Nome</label>
-        <input type="text" name="name" id="name">
+        <input type="text" name="name" id="name" minlength="10" maxlength="40">
+        </div>
+        <div class="mail-form">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" minlength="10" maxlength="50">
+        </div>
+        
+        <div class="checkbox-form">
+            <input type="checkbox" name="check" id="checkbox1">
+            <label for="checkbox1">Cidade</label>
+            <input type="checkbox" name="check" id="checkbox2">
+            <label for="checkbox2">Campo</label>
+            <input type="checkbox" name="check" id="checkbox3">
+            <label for="checkbox3">Praia</label>
+            <input type="checkbox" name="check" id="checkbox4">
+            <label for="checkbox4">Montanhas</label>
+        </div>
+        <div class="text-area"></div>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        </form>
     </main>
 
 </body>

@@ -7,3 +7,11 @@ main {
     border: 3px solid black;
     padding: 16px;
 }
+.name-form {
+    margin-bottom: 10px;
+}
+
+.checkbox-form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
