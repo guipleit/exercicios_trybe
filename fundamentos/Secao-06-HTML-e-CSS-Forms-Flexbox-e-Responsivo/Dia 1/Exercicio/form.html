@@ -16,11 +16,11 @@
         <form action="get">
             <div class="name-form">
         <label for="name">Nome Completo:</label>
-        <input type="text" name="name" id="name" minlength="10" maxlength="40">
+        <input type="text" name="name" id="name" minlength="10" maxlength="40" required>
         </div>
         <div class="mail-form">
             <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email" minlength="10" maxlength="50">
+            <input type="email" name="email" id="email" minlength="10" maxlength="50" required>
         </div>
         <label for="destination">Destino Preferido:</label>
         <div id="destination">
@@ -40,6 +40,19 @@
         <div class="date-form">
             <label for="date">Qual a melhor data para realizar sua viagem?</label>
             <input type="datetime" name="date" id="date" placeholder="dd/mm/aaaa">
+        </div>
+        <div class="ad">
+            <label for="ad">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+            <input type="radio" name="ad" id="ad">
+        </div>
+        
+        <div class="agreement"></div>
+        <label for="agree">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+        <input type="radio" name="agree" id="agree">
+        </div>
+        
+        <div class="submit">
+            <button type="submit">Enviar</button>
         </div>
         </form>
     </main>

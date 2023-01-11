@@ -1,3 +1,6 @@
+* {
+    font-size: 18px;
+}
 header {
     font-size: 30px;
     margin: 10px;
@@ -19,6 +22,9 @@ main {
     margin-bottom: 10px;
 }
 
+.submit {
+    margin-top: 10px;
+}
 textarea {
     margin-top: 10px;
     width: 338px;
@@ -33,4 +39,5 @@ textarea {
 
 .date-form {
     margin-top: 10px;
+    margin-bottom: 10px;
 }
