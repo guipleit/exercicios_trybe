@@ -25,6 +25,9 @@ main {
 .submit {
     margin-top: 10px;
 }
+fieldset {
+    border: 0px;
+}
 textarea {
     margin-top: 10px;
     width: 338px;
