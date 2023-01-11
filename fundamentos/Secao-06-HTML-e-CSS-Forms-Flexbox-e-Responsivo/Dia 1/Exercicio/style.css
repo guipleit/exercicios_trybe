@@ -15,3 +15,22 @@ main {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.mail-form {
+    margin-bottom: 10px;
+}
+
+textarea {
+    margin-top: 10px;
+    width: 338px;
+    height: 184px;
+    resize: none;
+}
+
+#destination {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.date-form {
+    margin-top: 10px;
+}
