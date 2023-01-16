@@ -61,6 +61,9 @@ border-radius: 5px;
 .card-2 {
     display: none;
 }
+.card-3 {
+    display: none;
+}
 .card:nth-of-type(1) {
 background-color: #0fa36b;
 }
@@ -80,6 +83,11 @@ background-color: #41197f;
 
 @media screen and (min-width: 600px) and (max-width: 1000px) {
     .card-2 {
+        display: block;
+    }
+}
+@media screen and (min-width: 650px) and (max-width: 950px) {
+    .card-3 {
         display: block;
     }
 }
