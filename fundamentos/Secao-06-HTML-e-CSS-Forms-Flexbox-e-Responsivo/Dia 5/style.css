@@ -91,3 +91,8 @@ background-color: #41197f;
         display: block;
     }
 }
+@media screen and (max-width: 500px) {
+    p.trick {
+        color: black
+    }
+}
