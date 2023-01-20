@@ -71,7 +71,11 @@ const decode = require('./script')
 
 describe('Exercício 3', () => {
     test('Req 1', () => {
-        expect(encode()).toEqual('function')
-        expect(decode()).toEqual('function')
+        expect(typeof encode).toEqual('function')
+        expect(typeof decode).toEqual('function')
+    })
+
+    test('Req 2', () => {
+        expect(encode(['a'])).toBe(1)
     })
 })

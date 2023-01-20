@@ -22,6 +22,7 @@ function myFizzBuzz(num) {
 module.exports = myFizzBuzz
 
 // Exercício 3
+
 const mapString = (objectMap, string) => {
   const splitString = string.split('');
   const mappedArray = [];
