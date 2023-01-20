@@ -63,19 +63,30 @@
 // module.exports = encode
 // module.exports = decode
 
-const techList = (array, name) => {
-  let arrayList = []
-  if (array.length === 0) {
-    return 'Vazio!'}
-  for (let index = 0; index < array.length; index += 1) {
-    let newObj = {}
-    newObj.tech = array[index]
-    newObj.name = name
-    arrayList.push(newObj)
+// const techList = (array, name) => {
+//   let arrayList = []
+//   if (array.length === 0) {
+//     return 'Vazio!'}
+//   for (let index = 0; index < array.length; index += 1) {
+//     let newObj = {}
+//     newObj.tech = array[index]
+//     newObj.name = name
+//     arrayList.push(newObj)
     
-  }
-  arrayList.sort((a, b) => a.tech.localeCompare(b.tech))
-  return arrayList
+//   }
+//   arrayList.sort((a, b) => a.tech.localeCompare(b.tech))
+//   return arrayList
+// }
+// module.exports = techList
+// console.log(techList([], 'Lucas'))
+
+const hydrate = (string) => {
+ let water = 0
+ let numbers = string.match(/\d+/g) || [];
+ water = numbers.reduce((acc, val) => acc + parseInt(val), 0);
+ let copos = 'copo'
+ if (water > 1) copos = 'copos'
+ return `${water} ${copos} de água`
 }
-module.exports = techList
-console.log(techList([], 'Lucas'))
+module.exports = hydrate
+console.log(hydrate('5 copo de cerveja'));
