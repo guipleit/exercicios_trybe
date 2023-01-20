@@ -97,4 +97,3 @@ const verifyPair = (object, key, value) => {
         }
     }
 }
-console.log(verifyPair(lesson3, 'professor', 'Maria Clara'));
