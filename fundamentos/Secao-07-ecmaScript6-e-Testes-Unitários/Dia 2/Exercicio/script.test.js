@@ -57,25 +57,65 @@
 //         expect(myFizzBuzz('t')).toBe(false)
 //     })
 // })
-const mapString = require('./script')
-const encode = require('./script')
-const decode = require('./script')
+// const mapString = require('./script')
+// const encode = require('./script')
+// const decode = require('./script')
 
 
-// Para as funções encode e decode, crie os seguintes testes em Jest:
-// Teste se encode e decode são funções;
-// Para a função encode, teste se as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4 e 5, respectivamente;
-// Para a função decode, teste se os números 1, 2, 3, 4 e 5 são convertidos nas vogais a, e, i, o, u, respectivamente;
-// Teste se as demais letras/números não são convertidos para cada caso;
-// Teste se a string que é retornada pelas funções tem o mesmo número de caracteres que a string passada como parâmetro.
+// // Para as funções encode e decode, crie os seguintes testes em Jest:
+// // Teste se encode e decode são funções;
+// // Para a função encode, teste se as vogais a, e, i, o, u são convertidas em 1, 2, 3, 4 e 5, respectivamente;
+// // Para a função decode, teste se os números 1, 2, 3, 4 e 5 são convertidos nas vogais a, e, i, o, u, respectivamente;
+// // Teste se as demais letras/números não são convertidos para cada caso;
+// // Teste se a string que é retornada pelas funções tem o mesmo número de caracteres que a string passada como parâmetro.
 
-describe('Exercício 3', () => {
-    test('Req 1', () => {
-        expect(typeof encode).toEqual('function')
-        expect(typeof decode).toEqual('function')
-    })
+// describe('Exercício 3', () => {
+//     test('Req 1', () => {
+//         expect(typeof encode).toEqual('function')
+//         expect(typeof decode).toEqual('function')
+//     })
 
-    test('Req 2', () => {
-        expect(encode(['a'])).toBe(1)
-    })
-})
+//     test('Req 2', () => {
+//         expect(encode(['a'])).toBe(1)
+//     })
+// })
+
+const techList = require('./script.js');
+
+describe('Testa a função techList', () => {
+  it('Testa se a função techList é definida', () => {
+    expect(techList).toBeDefined();
+  });
+  it('Testa se techList é uma função', () => {
+    expect(typeof techList).toBe('function');
+  });
+  it('Lista com 5 tecnologias deve retornar uma lista de objetos ordenados', () => {
+    expect(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas')).toEqual([
+      {
+        tech: 'CSS',
+        name: 'Lucas'
+      },
+      {
+        tech: 'HTML',
+        name: 'Lucas'
+      },
+      {
+        tech: 'JavaScript',
+        name: 'Lucas'
+      },
+      {
+        tech: 'Jest',
+        name: 'Lucas'
+      },
+      {
+        tech: 'React',
+        name: 'Lucas'
+      }
+    ]);
+  });
+  it('Lista com 0 tecnologias deve retornar uma mensagem de erro "Vazio!"', () => {
+    expect(techList([], 'Lucas')).toBe('Vazio!');
+  });
+});
+
+module.exports = techList;
