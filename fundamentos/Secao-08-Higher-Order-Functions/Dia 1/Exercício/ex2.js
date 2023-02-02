@@ -120,3 +120,11 @@ const all2000 = () => {
 }
 
 console.log((all2000()));
+
+// Faça uma função que retorne true, se algum livro foi lançado na década de 80, e false, caso contrário.
+
+const release80 = () => {
+    return books.some((book) => book.releaseYear === 1980)
+}
+
+console.log(release80());
