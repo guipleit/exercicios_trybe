@@ -77,3 +77,19 @@ const authorBornIn1947 = () => {
 }
 console.log(authorBornIn1947());
 
+// Retorne o nome do livro com menor número de caracteres (menor nome).
+const expectedResult2 = 'Duna';
+const smallerName = () => {
+  let nameBook
+  books.forEach((book) => {
+
+     if(!nameBook || book.name.length < nameBook.length) {
+        return nameBook = book.name
+     } 
+  })
+
+  // Variável nameBook que receberá o valor do menor nome;
+  return nameBook;
+}
+
+console.log(smallerName());
