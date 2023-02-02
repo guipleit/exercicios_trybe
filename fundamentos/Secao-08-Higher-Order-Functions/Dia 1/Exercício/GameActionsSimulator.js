@@ -46,4 +46,36 @@ const mageAttack = (mage) => {
     }
 }
 
-console.log(mageAttack(mage));
+// Agora que você já possui a implementação das funções relativas aos três exercícios anteriores, passe-as como parâmetro para outras funções que irão compor um objeto gameActions. O objeto será composto por ações do jogo, e cada ação é por definição uma HOF, pois, nesse caso, são funções que recebem como parâmetro outra função.
+
+// Crie a primeira HOF que compõe o objeto gameActions.
+// Ela será a função que simula o turno do personagem warrior. Essa HOF receberá como parâmetro a função que calcula o dano deferido pelo personagem warrior e atualizará os healthPoints do monstro dragon. Além disso, ela também deve atualizar o valor da chave damage do warrior.
+
+
+const gameActions = {
+    warriorTurn: (warriorAttack) => {
+        const damage = warriorAttack(warrior)
+        dragon.healthPoints -= damage
+        warrior.damage = damage
+    },
+
+    mageTurn: (mageAttack) => {
+        const damage = mageAttack(mage)
+        dragon.healthPoints -= damage
+        mage.damage = damage
+        mage.mana -= 15
+    },
+
+    dragonTurn: (dragonAttack) => {
+        const damage = dragonAttack(dragon)
+        mage.healthPoints -= damage
+        warrior.healthPoints -= damage
+        dragon.damage = damage
+    },
+    
+    results: () => battleMembers,
+};
+gameActions.dragonTurn(dragonAttack);
+gameActions.mageTurn(mageAttack);
+gameActions.warriorTurn(warriorAttack);
+console.log(gameActions.results());
