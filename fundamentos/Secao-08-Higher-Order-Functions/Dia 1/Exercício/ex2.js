@@ -112,3 +112,11 @@ const getNamedBook = () => {
 }
 
 console.log(getNamedBook());
+
+// Faça uma função que retorne true se todas as pessoas autoras tiverem nascido no século XX, ou false, caso contrário.
+
+const all2000 = () => {
+    return books.every((author) => author.author.birthYear === 2000)
+}
+
+console.log((all2000()));
