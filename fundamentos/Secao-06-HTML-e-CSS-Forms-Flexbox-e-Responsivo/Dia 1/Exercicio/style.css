@@ -1,0 +1,46 @@
+* {
+    font-size: 18px;
+}
+header {
+    font-size: 30px;
+    margin: 10px;
+}
+
+main {
+    border: 3px solid black;
+    padding: 16px;
+}
+.name-form {
+    margin-bottom: 10px;
+}
+
+.checkbox-form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mail-form {
+    margin-bottom: 10px;
+}
+
+.submit {
+    margin-top: 10px;
+}
+fieldset {
+    border: 0px;
+}
+textarea {
+    margin-top: 10px;
+    width: 338px;
+    height: 184px;
+    resize: none;
+}
+
+#destination {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.date-form {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

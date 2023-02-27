@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: #282C33;
+}
+
+.main {
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+.header-text {
+    height: 74px;
+    width: 517px;
+    left: 306px;
+    top: 63px;
+    font-family: 'Fira Code';
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 60px;
+    line-height: 78.72px;
+}
+
+.cambio {
+    color: #95EBA8;
+}
+
+form {
+    margin-top: 2%;
+    margin-left: 1%;
+}
+
+.form-text {
+    font-family: 'Fira Code';
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    margin-bottom: 6px;
+    margin-left: 2px;
+}
+
+.input-container {
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: -2%;
+}
+
+#text-input {
+    height: 48px;
+    width: 171px;
+    border-radius: 10px;
+    background: rgba(217, 217, 217, 0.1);
+    border-radius: 10px;
+    padding-left: 20px;
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+#submit-btn {
+    height: 48px;
+    width: 171px;
+    border-radius: 10px;
+    background-color: #96EB95;
+    font-family: 'Fira Code';
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-align: center;
+    border: 1px solid #96EB95;
+}
+
+.currency-container {
+    display: flex;
+    flex-direction: column;
+    height: 583px;
+    width: 900px;
+    left: 306px;
+    top: 290px;
+    border-radius: 20px;
+    background: #FFFFFF0F;
+    margin-left: 20%;
+    margin-top: 3%;
+}
+
+#currency-title {
+    font-family: 'Fira Code';
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.results-container {
+    flex: 1;
+    height: 90%;
+    max-height: 90%;
+    margin-top: auto;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-result {
+    height: 44px;
+    width: 150px;
+    left: 336px;
+    top: 372px;
+    border-radius: 5px;
+    background-color: #00000033;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2%;
+    padding: 16px;
+}
+
+.value {
+    color: #FFE713;
+    font-family: 'Fira Code';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.aceitar {
+    color: green;
+}
+

@@ -1,0 +1,95 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    list-style: none;
+}
+
+h1 {
+    color: rgb(77, 77, 77)
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(171, 198, 222);
+    align-items: center;
+}
+
+header p {
+    font-size: 40px;
+    margin-right: 500px;
+}
+
+
+nav ul {
+    font-size: 30px;
+    display: flex;
+    gap: 16px
+}
+
+.article-container {
+    display: flex;
+}
+
+aside {
+    text-align: center;
+    font-size: 18px;
+}
+
+aside ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.aside-one {
+    font-size: 20px;
+    margin: 14px;
+}
+
+.aside-one ul li {
+    color: rgb(143, 180, 212);
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.aside-two {
+    margin-left: 30px;
+    margin-top: 14px;
+}
+
+.aside-one h2,
+.aside-two h2 {
+    color: rgb(77, 77, 77);
+}
+
+.aside-two ul li {
+    color: rgb(143, 180, 212);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.main-content {
+    max-width: 60%;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.main-content p {
+    font-size: 18px;
+}
+
+footer {
+    background-color: rgb(171, 198, 222);
+    text-align: center;
+    padding: 6px;
+}
+
+footer p {
+    margin: 0;
+}

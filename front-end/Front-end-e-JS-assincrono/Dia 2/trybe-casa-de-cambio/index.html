@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Playfair+Display:ital@1&family=Raleway:wght@200;300&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
+    <title>Casa de Câmbio</title>
+</head>
+<body>
+    <div class="main">
+        <div class="header-text">Casa de <span class="cambio">Câmbio</span> </div>
+        <form action="">
+            <p class="form-text">Digite a moeda:</p>
+            <div class="input-container">
+                <input type="text" id="text-input" placeholder="USD">
+                <button type="submit" id="submit-btn">Pesquisar </button>
+            </div>
+        </form>
+    </div>
+    <div class="currency-container">
+        <p id="currency-title"></p>
+        <div class="results-container"></div>
+    </div>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
