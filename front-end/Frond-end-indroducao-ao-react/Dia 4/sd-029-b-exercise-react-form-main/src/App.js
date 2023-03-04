@@ -1,5 +1,7 @@
 import React from 'react';
 import PersonalData from './components/PersonalData';
+import AddressData from './components/AddressData';
+import ProfData from './components/ProfData';
 
 class App extends React.Component {
   render() {
@@ -9,6 +11,9 @@ class App extends React.Component {
           React Form
         </h1>
         <PersonalData />
+        <AddressData />
+        <ProfData />
+
       </div>
     );
   }
