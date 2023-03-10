@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import pokemonList from '../data';
+import '../styles/pokemondetails.css';
 
 class PokemonDetails extends Component {
   render() {
@@ -9,11 +10,37 @@ class PokemonDetails extends Component {
     console.log(id);
     console.log(matchPokemon);
     return (
-      <h1>
-        { matchPokemon.name }
-        {' '}
-        details
-      </h1>
+      <div>
+        <h1>
+          { matchPokemon.name }
+          {' '}
+          details
+        </h1>
+        <h1>{ matchPokemon.name }</h1>
+        <p>
+          Type:
+          {' '}
+          {matchPokemon.type}
+        </p>
+        <p>
+          averageWeight:
+          {' '}
+          { matchPokemon.averageWeight.value }
+          { matchPokemon.averageWeight.measurementUnit }
+        </p>
+        <p>{ matchPokemon.summary }</p>
+        <div>
+          <h2>Found At:</h2>
+          <ul>
+            {matchPokemon.foundAt.map((location) => (
+              <li key={ location.location }>
+                {location.location}
+                <img src={ location.map } alt={ `Map of ${location.location}` } />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     );
   }
 }
