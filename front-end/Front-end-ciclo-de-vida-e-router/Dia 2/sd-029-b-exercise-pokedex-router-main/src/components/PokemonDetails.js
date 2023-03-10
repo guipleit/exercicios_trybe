@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import pokemonList from '../data';
 import '../styles/pokemondetails.css';
+import { Link } from 'react-router-dom';
 
 class PokemonDetails extends Component {
   render() {
@@ -40,6 +41,7 @@ class PokemonDetails extends Component {
             ))}
           </ul>
         </div>
+        <Link to="/">Voltar</Link>
       </div>
     );
   }
